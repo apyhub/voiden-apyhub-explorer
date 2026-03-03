@@ -1,0 +1,46 @@
+{
+  "id": "apyhub-explorer",
+  "type": "community",
+  "name": "ApyHub Explorer",
+  "description": "Browse, search, and integrate ApyHub APIs directly from Voiden. Discover 200+ production-ready APIs across AI, data processing, file conversion, and more — with live documentation and one-click request scaffolding.",
+  "version": "1.1.0",
+  "author": "Voiden",
+  "enabled": true,
+  "priority": 50,
+  "readme": "ApyHub Explorer brings the full ApyHub API catalog into Voiden. Browse featured APIs, search by keyword, view detailed documentation with endpoint routes, and scaffold requests without leaving your workspace. Categories include Artificial Intelligence, Data Extraction, Data Validation, File Conversion, File Security, Image Processing, Smart Generation, and more.",
+
+  "capabilities": {
+    "ui": {
+      "buttons": [
+        {
+          "id": "apyhub-explorer-panel",
+          "location": "sidebar-left",
+          "icon": "Globe",
+          "tooltip": "ApyHub API Catalog",
+          "description": "Opens the ApyHub Explorer panel to browse and search APIs"
+        }
+      ],
+      "description": "Registers a sidebar panel for browsing the ApyHub API catalog"
+    },
+    "blocks": {
+      "owns": ["apyhub-request"],
+      "allowExtensions": false,
+      "description": "Provides a request block pre-configured for ApyHub API endpoints"
+    }
+  },
+
+  "dependencies": {
+    "core": "^1.0.0",
+    "sdk": "^1.0.0"
+  },
+
+  "features": [
+    "Browse 200+ production-ready APIs from the ApyHub catalog",
+    "Search APIs by keyword with debounced live results",
+    "Category-based icons and color-coded badges matching the ApyHub website",
+    "Detailed API view with endpoint routes, methods, and sample responses",
+    "Paginated browsing with featured API highlights",
+    "One-click request scaffolding from API documentation",
+    "Dark-theme optimized card UI with thumbnails and descriptions"
+  ]
+}
