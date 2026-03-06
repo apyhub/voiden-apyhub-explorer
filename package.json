@@ -9,7 +9,7 @@
     "dev": "node esbuild.config.mjs --watch"
   },
   "dependencies": {
-    "@voiden/sdk": "^1.0.6"
+    "@voiden/sdk": "^1.0.8"
   },
   "peerDependencies": {
     "react": "^18.2.0",
